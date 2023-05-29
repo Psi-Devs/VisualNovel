@@ -1,8 +1,9 @@
 .featured {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
+  margin: 0px 2px;
 }
 
 .featuredItem {
@@ -14,8 +15,8 @@
 }
 
 .featuredImg {
-  width: 320px;
-  height: 320px;
+  width: 210px;
+  height: 297px;
   object-fit: cover;
 }
 

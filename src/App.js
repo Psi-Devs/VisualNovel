@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import { List } from "./pages/list/List";
-import { Docter } from "./pages/docter/Docter";
+import { Novel } from "./pages/docter/Novel";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Docters" element={<List />} />
-        <Route path="/Docters/:id" element={<Docter />} />
+        <Route path="/Novel" element={<List />} />
+        <Route path="/Novel/:id" element={<Novel />} />
       </Routes>
     </BrowserRouter>
   );

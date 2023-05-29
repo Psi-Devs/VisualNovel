@@ -1,47 +1,46 @@
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBookMedical,
-  faCalendarDay,
-  faClock,
-  faHospital,
-  faKitMedical,
+  faBookBookmark,
+  faFilter,
+  faNewspaper,
+  faPlus,
   faSearch,
-  faUserDoctor,
+  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { DateRange } from "react-date-range";
+// import { DateRange } from "react-date-range";
 import { useState } from "react";
 
-import { format } from "date-fns";
+// import { format } from "date-fns";
 
 const Header = ({ type }) => {
-  const [openDate, setOpendate] = useState(false);
+  // const [openDate, setOpendate] = useState(false);
 
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: new Date(),
+  //     key: "selection",
+  //   },
+  // ]);
 
-  const [openOptions, setOpenOptions] = useState(false);
-  const [options, setOptions] = useState({
-    hours: 9,
-    Min: 0,
-  });
+  // const [openOptions, setOpenOptions] = useState(false);
+  // const [options, setOptions] = useState({
+  //   hours: 9,
+  //   Min: 0,
+  // });
 
-  const handleOption = (name, operation) => {
-    setOptions((prev) => {
-      return {
-        ...prev,
-        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
-      };
-    });
-  };
+  // const handleOption = (name, operation) => {
+  //   setOptions((prev) => {
+  //     return {
+  //       ...prev,
+  //       [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+  //     };
+  //   });
+  // };
 
   return (
     <div className="header">
@@ -52,42 +51,53 @@ const Header = ({ type }) => {
       >
         <div className="headerList">
           <div className="headerListItem active">
-            <FontAwesomeIcon icon={faBookMedical} />
-            <span>Find </span>
+            <FontAwesomeIcon icon={faBookBookmark} />
+            <span>Search </span>
           </div>
           <div className="headerListItem ">
-            <FontAwesomeIcon icon={faUserDoctor} />
+            <FontAwesomeIcon icon={faTrophy} />
             <span>Top Rated</span>
           </div>
           <div className="headerListItem ">
-            <FontAwesomeIcon icon={faHospital} />
+            <FontAwesomeIcon icon={faNewspaper} />
             <span>New Releses</span>
           </div>
           <div className="headerListItem ">
-            <FontAwesomeIcon icon={faKitMedical} />
-            <span>Creater </span>
+            <FontAwesomeIcon icon={faPlus} />
+            <span>Creater corner</span>
           </div>
         </div>
         {type !== "list" && (
           <>
-            <h1 className="headerTitle">Early Bird Discounts? Its's Awsome</h1>
-            <p className="headerDesc">
-              Find your Cure from Best Doctors Hassle free at an affordable
-              prices
-            </p>
+            <h1 className="headerTitle">
+              Within the pages, a hidden world awaits, waiting someone to
+              discover
+            </h1>
+            {/* <p className="headerDesc">
+              
+            </p> */}
             <button className="headerBtn">Sign in/Register</button>
 
             <div className="headerSearch">
               <div className="headerSearchItem">
-                <FontAwesomeIcon className="headerIcon" icon={faUserDoctor} />
+                <FontAwesomeIcon className="headerIcon" icon={faSearch} />
                 <input
                   type="text"
-                  placeholder="Find Your Doctor"
+                  placeholder="Search Novel by Name"
                   className="headerSearchInput"
                 />
               </div>
 
               <div className="headerSearchItem">
+                <FontAwesomeIcon className="headerIcon" icon={faFilter} />
+                <input
+                  type="text"
+                  placeholder="Filter by genre"
+                  className="headerSearchInput"
+                />
+              </div>
+
+              {/* <div className="headerSearchItem">
                 <FontAwesomeIcon className="headerIcon" icon={faClock} />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
@@ -141,32 +151,10 @@ const Header = ({ type }) => {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
 
-              <div className="headerSearchItem">
-                <FontAwesomeIcon className="headerIcon" icon={faCalendarDay} />
-                <span
-                  onClick={() => setOpendate(!openDate)}
-                  className="headerSearchText"
-                >
-                  {" "}
-                  {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
-                    date[0].endDate,
-                    "MM/dd/yyyy"
-                  )}`}{" "}
-                </span>
-                {openDate && (
-                  <DateRange
-                    editableDateInputs={true}
-                    onChange={(item) => setDate([item.selection])}
-                    moveRangeOnFirstSelection={false}
-                    ranges={date}
-                    className="date"
-                  />
-                )}
-              </div>
-
-              <div className="headerSearchItem">
+              <div to="" className="headerSearchItem">
+                {/* <link to="/Novel" href=""></link> */}
                 <button className="searchBtn">
                   <FontAwesomeIcon className="headerIcon" icon={faSearch} />
                   <span className="search">Search</span>
