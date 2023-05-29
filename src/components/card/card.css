@@ -1,0 +1,27 @@
+.novelName {
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardItem {
+  position: relative;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cardImg {
+  width: 210px;
+  height: 297px;
+  object-fit: cover;
+}
+
+.cardTitle {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  gap: 10px;
+}
