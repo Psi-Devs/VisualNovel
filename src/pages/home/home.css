@@ -1,12 +1,41 @@
 .homeContainer {
-  margin-top: 50px;
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin: 50px auto 20px;
+}
+
+.homeScroll {
+  max-width: 1024px;
+  max-height: 420px;
+  overflow-y: scroll;
+  overflow-x: inherit;
+}
+
+.homeScroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.homeScroll::-webkit-scrollbar-thumb {
+  width: 4px;
+  /* background-color: #0071c2; */
 }
 
 .homeTitle {
-  width: 1024px;
+  width: 1004px;
   font-size: 20px;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #febb02;
+}
+
+/* ::-webkit-scrollbar-track {
+  background-color: #0071c2;
+} */

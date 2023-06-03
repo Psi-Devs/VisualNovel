@@ -1,0 +1,53 @@
+.footer {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 50px 0px;
+}
+
+.footerContainer.listMode {
+  margin: 20px 0 0 0;
+}
+
+.footerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.footerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footerDesc {
+  margin: 10px 0;
+}
+
+.footerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footerIcon {
+  color: lightgrey;
+}
