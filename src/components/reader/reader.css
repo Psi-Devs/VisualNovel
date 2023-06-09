@@ -1,0 +1,38 @@
+.novelName {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  max-width: 200px;
+  position: relative;
+  left: 250px;
+  color: greenyellow;
+}
+
+.readerItem {
+  position: relative;
+  color: white;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.readerImg {
+  width: 650px;
+  max-height: fit-content;
+  object-fit: cover;
+}
+
+.readerTitle {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  color: aliceblue;
+  background-color: #003580;
+  justify-content: center;
+  position: relative;
+}

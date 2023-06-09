@@ -4,7 +4,6 @@ import { faRegistered } from "@fortawesome/free-solid-svg-icons";
 
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { useState } from "react";
 
 const Footer = ({ type }) => {
   return (

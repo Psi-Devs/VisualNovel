@@ -9,17 +9,17 @@
 .footerContainer {
   width: 100%;
   max-width: 1024px;
-  margin: 20px 0px 50px 0px;
+  margin: 20px 0px 10px 0px;
 }
 
 .footerContainer.listMode {
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .footerList {
   display: flex;
   gap: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footerListItem {
