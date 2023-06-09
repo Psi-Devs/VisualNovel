@@ -1,13 +1,13 @@
 import "./featured.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookBookmark, faFilter } from "@fortawesome/free-solid-svg-icons";
 import Card from "../card/Card";
 
 const Featured = () => {
   return (
     <div className="featured">
+      <Card /> <Card />
       <Card />
-      <div className="featuredItem">
+      <Card />
+      {/* <div className="featuredItem">
         <img
           src="https://img.freepik.com/free-photo/beautiful-view-tall-ferris-wheel-marseille-france-evening_181624-1763.jpg?t=st=1685319958~exp=1685320558~hmac=08b8a525c93d5be8dc257aa5ed0e77a37bc8b6f852b07e9901d2d0ee20c90833"
           alt="none"
@@ -37,7 +37,7 @@ const Featured = () => {
         <div className="featuredTitle">
           <h1>Novel4</h1>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

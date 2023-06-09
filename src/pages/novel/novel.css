@@ -1,0 +1,48 @@
+.Container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 2px auto 10px;
+  overflow-x: hidden;
+}
+
+.readerColumns {
+  display: inline-flex;
+}
+
+.pageScroll {
+  width: 652px;
+  max-height: 810px;
+  overflow-y: scroll;
+  overflow-x: inherit;
+}
+
+.rightMenu {
+  background-color: #0071c2;
+  width: 372px;
+  height: 810px;
+}
+
+.homeScroll::-webkit-scrollbar {
+  width: 2px;
+}
+
+.homeScroll::-webkit-scrollbar-thumb {
+  width: 2px;
+  /* background-color: #0071c2; */
+}
+
+.homeTitle {
+  width: 1004px;
+  font-size: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #febb02;
+}
